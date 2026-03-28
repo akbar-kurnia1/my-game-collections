@@ -28,7 +28,7 @@ export default function GameCard({ game }) {
         >
           {isFavorite ? '⭐' : '☆'}
         </button>
-        <div className="flex items-center gap-1.5 mt-1">
+        <div className="flex items-center gap-1.5 mt-1 w-full justify-center relative">
           <button 
             onClick={handleDecrease}
             className="w-6 h-6 border-2 border-black bg-gray-200 font-bold hover:bg-gray-300 cursor-pointer flex items-center justify-center text-xs"
@@ -44,33 +44,33 @@ export default function GameCard({ game }) {
           >
             +
           </button>
-        </div>
 
         {rating === 1 && (
-          <span className="ml-auto font-bold text-red-600">
+          <span className="absolute right-0 font-bold text-red-600 text-xs">
             Very Bad
           </span>
         )}
         {rating === 2 && (
-          <span className="ml-auto font-bold text-yellow-600">
+          <span className="absolute right-0 font-bold text-yellow-600 text-xs">
             Bad
           </span>
         )}
         {rating === 3 && (
-          <span className="ml-auto font-bold text-lime-600">
+          <span className="absolute right-0 font-bold text-lime-600 text-xs">
             Not Bad
           </span>
         )}
         {rating === 4 && (
-          <span className="ml-auto font-bold text-green-600">
+          <span className="absolute right-0 font-bold text-green-600 text-xs">
             Good
           </span>
         )}
         {rating === 5 && (
-          <span className="ml-auto font-bold text-yellow-600">
-            omaga
+          <span className="absolute right-0 font-bold text-yellow-600 text-xs">
+            Masterpiece
           </span>
         )}
+        </div>
       </div>
     </div>
   );
