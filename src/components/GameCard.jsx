@@ -51,12 +51,12 @@ export default function GameCard({ game }) {
           </span>
         )}
         {rating === 2 && (
-          <span className="absolute right-0 font-bold text-yellow-600 text-xs">
+          <span className="absolute right-0 font-bold text-orange-600 text-xs">
             Bad
           </span>
         )}
         {rating === 3 && (
-          <span className="absolute right-0 font-bold text-lime-600 text-xs">
+          <span className="absolute right-0 font-bold text-yellow-600 text-xs">
             Not Bad
           </span>
         )}
@@ -66,7 +66,7 @@ export default function GameCard({ game }) {
           </span>
         )}
         {rating === 5 && (
-          <span className="absolute right-0 font-bold text-yellow-600 text-xs">
+          <span className="absolute right-0 font-bold text-purple-600 text-xs">
             Masterpiece
           </span>
         )}
