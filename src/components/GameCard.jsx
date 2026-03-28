@@ -13,38 +13,38 @@ export default function GameCard({ game }) {
         }
     }
     return (
-        <div className="p-4 border-2 border-black bg-white mb-4">
-        <div className="flex justify-between items-start">
-          <div>
-            <h2 className="text-xl font-bold">{game.name}</h2>
-            <p className="text-gray-700">{game.genre}</p>
-          </div>
-          <button 
+        <div className="border-2 border-black bg-white flex flex-col items-center p-3 h-full">
+      <img 
+        src={game.cover} 
+        alt={game.name} 
+        className="w-full h-auto aspect-3/4 object-cover border border-black mb-3" 
+      />
+      <div className="flex flex-col items-center w-full text-center gap-1.5">
+        <h2 className="text-base font-bold line-clamp-2">{game.name}</h2>
+        <p className="text-xs text-gray-700">{game.genre}</p>
+        <button 
           onClick={() => setIsFavorite(!isFavorite)}
-          className="text-2xl cursor-pointer"
+          className="text-xl cursor-pointer"
         >
           {isFavorite ? '⭐' : '☆'}
         </button>
-      </div>
-
-      <div className="border-t-2 border-black pt-4 flex items-center gap-4">
-        <span className="font-semibold">Rating:</span>
-        
-        <button 
-          onClick={handleDecrease}
-          className="px-3 py-1 border-2 border-black bg-gray-200 font-bold hover:bg-gray-300 cursor-pointer"
-        >
-          -
-        </button>
-        
-        <span className="text-lg font-bold w-6 text-center">{rating}</span>
-        
-        <button 
-          onClick={handleIncrease}
-          className="px-3 py-1 border-2 border-black bg-gray-200 font-bold hover:bg-gray-300 cursor-pointer"
-        >
-          +
-        </button>
+        <div className="flex items-center gap-1.5 mt-1">
+          <button 
+            onClick={handleDecrease}
+            className="w-6 h-6 border-2 border-black bg-gray-200 font-bold hover:bg-gray-300 cursor-pointer flex items-center justify-center text-xs"
+          >
+            -
+          </button>
+          
+          <span className="text-sm font-bold w-4 text-center">{rating}</span>
+          
+          <button 
+            onClick={handleIncrease}
+            className="w-6 h-6 border-2 border-black bg-gray-200 font-bold hover:bg-gray-300 cursor-pointer flex items-center justify-center text-xs"
+          >
+            +
+          </button>
+        </div>
 
         {rating === 1 && (
           <span className="ml-auto font-bold text-red-600">
@@ -68,7 +68,7 @@ export default function GameCard({ game }) {
         )}
         {rating === 5 && (
           <span className="ml-auto font-bold text-yellow-600">
-            Masterpiece! 🏆
+            omaga
           </span>
         )}
       </div>
