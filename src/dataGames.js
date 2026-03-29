@@ -6,6 +6,9 @@ import coverCOH from './assets/coverCOH.jpg';
 import coverMetro2033 from './assets/coverMetro2033.jpg';
 import coverMetroLastLight from './assets/coverMetroLastLight.jpg';
 import coverGTA from './assets/coverGTA.jpg';
+import coverSniperElite3 from './assets/coverSniperElite3.jpg';
+import coverBattlefield4 from './assets/coverBattlefield4.jpg';
+import coverMinecraft from './assets/coverMinecraft.jpg';
 
 export const gameList=[
     {
@@ -56,4 +59,22 @@ export const gameList=[
         genre: 'Action-Adventure',
         cover: coverGTA,
     },
+    {
+        id: 9,
+        name: "Sniper Elite 3",
+        genre: 'Sniper Shooter',
+        cover: coverSniperElite3,
+    },
+    {
+        id: 10,
+        name: "Battlefield 4",
+        genre: 'First-Person Shooter',
+        cover: coverBattlefield4,
+    },
+    {
+        id: 11,
+        name: "Minecraft",
+        genre: 'Sandbox',
+        cover: coverMinecraft,
+    }
 ]
