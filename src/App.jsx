@@ -25,6 +25,9 @@ function App() {
         ))}
       </div>
     </div>
+    <div className="text-center text-sm font-bold py-6 border-t-2 border-black mt-8">
+        Copyright © 2026 Akbar-Kurnia1. All rights reserved.
+      </div>
     </div>
   );
 }
